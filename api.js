@@ -25,7 +25,7 @@ async function main ()
   // const backstroke = await Event.findOne({ where: {style: 'backstroke'} });
   // const frog = await Event.findOne({ where: {style: 'frog'} });
   /**  Add events to users through Parti table */
-  //test
+  //main
   await player1.addEvents( [ butterfly, freestyle ] );
   await player2.addEvents( [ frog, butterfly ] );
 
