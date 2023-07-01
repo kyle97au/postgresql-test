@@ -3,7 +3,7 @@ const sequelize = require( "../connection" );
 
 const Event = sequelize.define( "event", {
   id: {
-    allowNull: false,
+    allowNull: true,
     type: DataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true

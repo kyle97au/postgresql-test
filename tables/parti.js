@@ -1,30 +1,12 @@
-// const { Sequelize, DataTypes } = require( "sequelize" );
-// const sequelize = require( "../connection" );
-// const User = require( "./user" );
+const { Sequelize, DataTypes } = require( "sequelize" );
+const sequelize = require( "../connection" );
 
-// const Parti = sequelize.define( "participant", {
-//   id: {
-//     allowNull: false,
-//     type: DataTypes.INTEGER,
-//     autoIncrement: true,
-//     primaryKey: true
-//   },
-//   EventId: {
-//     type: DataTypes.INTEGER,
-//     references: {
-//       model: Event,
-//       key: 'id'
-//     }
-//   },
-//   UserId: {
-//     type: DataTypes.INTEGER,
-//     references: {
-//       model: User,
-//       key: 'id'
-//     }
-//   }
-// } );
+const Parti = sequelize.define( 'parti', {} );
 
-// // await User.sync();
+const User = require( "./user" );
+const Event = require( "./event" );
 
-// module.exports = Parti;
+User.belongsToMany(Event, { through: Parti });
+Event.belongsToMany(User, { through: Parti });
+
+module.exports = Parti;
