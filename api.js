@@ -26,7 +26,7 @@ async function main ()
   // const frog = await Event.findOne({ where: {style: 'frog'} });
   /**  Add events to users through Parti table */
   await player1.addEvents( [ butterfly, freestyle ] );
-  await player2.addEvents( [ freestyle, frog ] );
+  await player2.addEvents( [ butterfly, frog ] );
 
   /** update Parti table */
   // await player1.setEvents( [ butterfly, freestyle ] );
