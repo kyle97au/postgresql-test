@@ -16,3 +16,5 @@ const Event = sequelize.define( "event", {
 // await User.sync();
 
 module.exports = Event;
+
+// hub test
