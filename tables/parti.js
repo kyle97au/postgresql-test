@@ -10,5 +10,3 @@ User.belongsToMany(Event, { through: Parti });
 Event.belongsToMany(User, { through: Parti });
 
 module.exports = Parti;
-
-//in hub main
