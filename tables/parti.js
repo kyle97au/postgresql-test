@@ -11,4 +11,4 @@ Event.belongsToMany(User, { through: Parti });
 
 module.exports = Parti;
 
-//3 July  hi
+//in hub
